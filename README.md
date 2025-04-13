@@ -1,3 +1,5 @@
+![Banner](images/um.png)
+
 # RetainFit Analytics - Sistema de Predição de Evasão em Academias
 
 ![Status](https://img.shields.io/badge/Status-Desenvolvimento%20Ativo-brightgreen)
@@ -80,6 +82,24 @@
 | Trimestral    | 90+ dias                    |
 | Semestral     | 180+ dias                   |
 | Anual         | 365+ dias                   |
+
+
+
+## 🖼️ Galeria de Imagens 
+
+Abaixo estão alguns prints do sistema, organizados por funcionalidade:
+
+| 🏠 Tela Inicial | 📤 Upload e Modelo Preditivo |
+|-----------------|------------------------------|
+| ![Tela Inicial](images/tela.png) | ![Modelo Preditivo](images/modelo.png) |
+
+| 📋 Visualização de Dados | 📊 Análise de Tendências |
+|---------------------------|---------------------------|
+| ![Visualização de Dados](images/dados.png) | ![Análise de Tendências](images/analise.png) |
+
+| ✅ Risco Baixo | ⚠️ Risco Médio | ❌ Risco Alto |
+|---------------|----------------|---------------|
+| ![Risco Baixo](images/baixo.png) | ![Risco Médio](images/medio.png) | ![Risco Alto](images/alto.png) |
 
 
 ## 📝 Licença
