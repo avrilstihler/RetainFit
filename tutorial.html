@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial - RetainFit Analytics</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <section class="info-section">
+      <h1>RetainFit - Guia para Usuários</h1>
+
+      <p>
+        <strong
+          >Guia completo para uso do sistema de previsão de evasão em academias: <em>RetainFit Analytics</em></strong
+        >
+      </p>
+
+      <h2>1. Introdução</h2>
+      <p>
+        Este sistema foi desenvolvido para ajudar academias a prever a
+        probabilidade de cancelamento de clientes com base em dados históricos e
+        comportamentais.
+      </p>
+      <p>Com ele, você pode:</p>
+      <ul>
+        <li><strong>Identificar clientes em risco</strong> de cancelamento</li>
+        <li>
+          <strong>Tomar ações preventivas</strong> com recomendações
+          personalizadas
+        </li>
+        <li>
+          <strong>Analisar padrões</strong> de cancelamento por plano,
+          frequência e sazonalidade
+        </li>
+      </ul>
+
+      <h2>2. Como Usar a Aplicação</h2>
+
+      <h3>2.1. Abas Principais</h3>
+      <p>A aplicação possui 4 abas principais:</p>
+      <ul>
+        <li>
+          <strong>📊 Previsão</strong> – Faça simulações individuais para
+          avaliar o risco de cancelamento de um cliente específico.
+        </li>
+        <li>
+          <strong>📈 Análise</strong> – Visualize gráficos e insights sobre
+          cancelamentos por:
+          <ul>
+            <li>Estação do ano</li>
+            <li>Tipo de plano</li>
+            <li>Frequência semanal</li>
+          </ul>
+        </li>
+        <li>
+          <strong>📋 Dados</strong> – Visualize todos os clientes cadastrados e
+          filtre por:
+          <ul>
+            <li>Todos os clientes</li>
+            <li>Ativos</li>
+            <li>Cancelados</li>
+            <li>Alto risco</li>
+          </ul>
+        </li>
+        <li>
+          <strong>🤖 Modelo</strong> – Importe novos dados para treinar o modelo
+          e veja métricas de desempenho (acurácia, precisão, recall)
+        </li>
+      </ul>
+
+      <h3>2.2. Passo a Passo para Uso</h3>
+
+      <h4>1. Importando Dados</h4>
+      <ol>
+        <li>Vá para a aba <strong>"Modelo"</strong></li>
+        <li>Clique em <strong>"Importar Dados"</strong></li>
+        <li>Selecione o arquivo Excel (.xlsx ou .xls)</li>
+        <li>Aguarde o processamento</li>
+      </ol>
+      <p>
+        ✅ <strong>Pronto!</strong> O sistema já está treinado com os dados e
+        pronto para análises.
+      </p>
+
+      <h4>2. Fazendo Previsões Individuais</h4>
+      <ol>
+        <li>
+          Preencha os campos:
+          <ul>
+            <li>Gênero</li>
+            <li>Idade</li>
+            <li>Meses como cliente</li>
+            <li>Frequência semanal</li>
+            <li>Tipo de plano</li>
+            <li>Estação do ano</li>
+            <li>Dias desde o último pagamento</li>
+          </ul>
+        </li>
+        <li>Clique em <strong>"Calcular Risco"</strong></li>
+      </ol>
+      <p>📌 <strong>O sistema mostrará:</strong></p>
+      <ul>
+        <li>% de risco de cancelamento</li>
+        <li>Nível de risco (Baixo, Médio, Alto)</li>
+        <li>Fatores de risco</li>
+        <li>Sugestões de ação</li>
+      </ul>
+
+      <h4>3. Analisando Dados</h4>
+      <p>Na aba <strong>"Análise"</strong>, você encontra:</p>
+      <ul>
+        <li>
+          📊 <strong>Gráficos comparativos</strong> entre clientes ativos e
+          cancelados
+        </li>
+        <li>
+          🔍 <strong>Principais Insights</strong>, como:
+          <ul>
+            <li>Qual estação tem mais cancelamentos</li>
+            <li>Quais planos têm maior retenção</li>
+            <li>Como a frequência de uso afeta a evasão</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>3. Como Preparar a Tabela de Dados</h2>
+
+      <h3>3.1. Formato da Planilha</h3>
+      <p>
+        A tabela deve ser em <strong>Excel (.xlsx ou .xls)</strong> e conter as
+        seguintes colunas:
+      </p>
+
+      <table border="1" cellspacing="0" cellpadding="6">
+        <thead>
+          <tr>
+            <th>Nome da Coluna</th>
+            <th>Tipo de Dado</th>
+            <th>Exemplo</th>
+            <th>Obrigatório?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Gênero</strong></td>
+            <td>Texto</td>
+            <td>"Masculino", "Feminino"</td>
+            <td>✅ Sim</td>
+          </tr>
+          <tr>
+            <td><strong>Idade</strong></td>
+            <td>Número</td>
+            <td>25, 30, 40</td>
+            <td>✅ Sim</td>
+          </tr>
+          <tr>
+            <td><strong>Meses</strong></td>
+            <td>Número</td>
+            <td>3, 6, 12</td>
+            <td>✅ Sim</td>
+          </tr>
+          <tr>
+            <td><strong>Frequência</strong></td>
+            <td>Número</td>
+            <td>2 (vezes/semana)</td>
+            <td>✅ Sim</td>
+          </tr>
+          <tr>
+            <td><strong>Plano</strong></td>
+            <td>Texto</td>
+            <td>"Mensal", "Trimestral", "Anual"</td>
+            <td>✅ Sim</td>
+          </tr>
+          <tr>
+            <td><strong>Estação</strong></td>
+            <td>Texto</td>
+            <td>"Verão", "Inverno"</td>
+            <td>✅ Sim</td>
+          </tr>
+          <tr>
+            <td><strong>Último Pagamento</strong></td>
+            <td>Data</td>
+            <td>"15/03/2024"</td>
+            <td>✅ Sim</td>
+          </tr>
+          <tr>
+            <td><strong>Status</strong></td>
+            <td>Texto</td>
+            <td>"Ativo", "Cancelado"</td>
+            <td>✅ Sim</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>3.2. Exemplo de Planilha Válida</h3>
+      <table border="1" cellspacing="0" cellpadding="6">
+        <thead>
+          <tr>
+            <th>Gênero</th>
+            <th>Idade</th>
+            <th>Meses</th>
+            <th>Frequência</th>
+            <th>Plano</th>
+            <th>Estação</th>
+            <th>Último Pagamento</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Feminino</td>
+            <td>28</td>
+            <td>6</td>
+            <td>3</td>
+            <td>Mensal</td>
+            <td>Verão</td>
+            <td>10/03/2024</td>
+            <td>Ativo</td>
+          </tr>
+          <tr>
+            <td>Masculino</td>
+            <td>35</td>
+            <td>12</td>
+            <td>1</td>
+            <td>Anual</td>
+            <td>Inverno</td>
+            <td>15/01/2024</td>
+            <td>Cancelado</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>4. Dicas para Melhor Utilização</h2>
+      <ul>
+        <li>
+          🔹 <strong>Atualize os dados regularmente</strong> para manter o
+          modelo preciso.
+        </li>
+        <li>
+          🔹 <strong>Use os filtros</strong> na aba "Dados" para encontrar
+          clientes de alto risco.
+        </li>
+        <li>
+          🔹 <strong>Acompanhe os insights</strong> na aba "Análise" para
+          identificar padrões.
+        </li>
+        <li>
+          🔹 <strong>Personalize as ações</strong> com base nas sugestões do
+          sistema.
+        </li>
+      </ul>
+
+      <h2>5. Suporte</h2>
+      <p>Se tiver dúvidas ou problemas:</p>
+      <ul>
+        <li>📧 <strong>Contato:</strong> contato@retainfit.com</li>
+        <li>📞 <strong>Telefone:</strong> (11) 98765-4321</li>
+      </ul>
+
+      <p>
+        ✅ <strong>Pronto!</strong> Agora você pode usar o sistema para reduzir
+        a evasão e melhorar a retenção de clientes! 🚀
+      </p>
+    </section>
+
+    <footer
+      style="
+        margin-top: 4rem;
+        padding: 2rem 0;
+        text-align: center;
+        color: var(--gray);
+        border-top: 1px solid rgba(148, 163, 184, 0.2);
+        font-size: 0.9rem;
+      "
+    >
+      &copy; 2025 RetainFit Analytics — Todos os direitos reservados.<br />
+      Desenvolvido com 💙 por Avril.
+    </footer>
+  </body>
+</html>

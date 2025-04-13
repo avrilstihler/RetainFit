@@ -1,0 +1,226 @@
+:root {
+  --primary: #2563eb;
+  --primary-light: #3b82f6;
+  --secondary: #10b981;
+  --dark: #0f172a;
+  --darker: #020617;
+  --light: #f8fafc;
+  --gray: #94a3b8;
+  --code-bg: #1e293b;
+}
+
+/* Reset e Estilos Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  line-height: 1.7;
+  color: var(--light);
+  background-color: var(--darker);
+  background-image: radial-gradient(
+      circle at 10% 20%,
+      rgba(37, 99, 235, 0.1) 0%,
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(16, 185, 129, 0.1) 0%,
+      transparent 20%
+    );
+  min-height: 100vh;
+  padding: 2rem 4rem;
+}
+
+/* Tipografia */
+h1 {
+  color: var(--primary-light);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-radius: 2px;
+}
+
+h2 {
+  color: var(--primary-light);
+  font-size: 1.8rem;
+  margin: 2.5rem 0 1.2rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--primary);
+}
+
+h3 {
+  color: var(--light);
+  font-size: 1.3rem;
+  margin: 1.8rem 0 1rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  color: var(--gray);
+}
+
+/* Listas */
+ul,
+ol {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.8rem;
+  color: var(--gray);
+}
+
+/* Código e Blocos Técnicos */
+code {
+  font-family: "Fira Code", monospace;
+  background-color: var(--code-bg);
+  color: #f8fafc;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: var(--code-bg);
+  padding: 1.2rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  border-left: 4px solid var(--primary);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  color: #e2e8f0;
+}
+
+/* Tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background-color: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+th {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  color: var(--gray);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--light);
+}
+
+/* Diagramas Mermaid */
+.mermaid {
+  background-color: rgba(15, 23, 42, 0.7);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Destaques e Elementos Especiais */
+strong {
+  color: var(--light);
+  font-weight: 600;
+}
+
+.highlight {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  body {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  pre {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Efeitos Especiais */
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.loading {
+  animation: pulse 1.5s infinite;
+}
+
+/* Scrollbar Personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--darker);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-light);
+}

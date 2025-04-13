@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="style2.css" />
+    <meta charset="UTF-8" />
+    <title>Documentação - RetainFit Analytics</title>
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+  </head>
+  <body>
+    <h1>RetainFit Analytics - Documentação Técnica do Projeto</h1>
+
+    <h2>1. Visão Geral</h2>
+
+    <p>
+      <strong>Objetivo</strong>: Sistema preditivo para redução de cancelamentos
+      em academias
+    </p>
+
+    <p><strong>Stack Tecnológico</strong>:</p>
+    <ul>
+      <li>Frontend: HTML5, CSS3, JavaScript</li>
+      <li>Backend: Node.js (simulação)</li>
+      <li>Modelo Preditivo: Random Forest (simulado via JavaScript)</li>
+    </ul>
+
+    <p><strong>Principais Funcionalidades</strong>:</p>
+    <ul>
+      <li>Cálculo de risco de cancelamento em tempo real</li>
+      <li>Análise visual de dados históricos</li>
+      <li>Importação/exportação de datasets</li>
+      <li>Geração de sugestões de retenção</li>
+    </ul>
+
+    <h2>2. Arquitetura do Sistema</h2>
+
+    <div class="mermaid">
+      graph TD
+        A[Frontend] --> B[Formulário de Previsão]
+        A --> C[Gráficos Interativos]
+        A --> D[Gerenciamento de Dados]
+        B --> E[Cálculo de Risco]
+        C --> F[Visualização de Tendências]
+        D --> G[Importação XLSX/CSV]
+        E --> H[Modelo Preditivo]
+        G --> H
+        H --> I[Armazenamento Local]
+    </div>
+    
+
+    <h2>3. Especificações Técnicas</h2>
+
+    <p><strong>Variáveis do Modelo Preditivo:</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Variável</th>
+          <th>Tipo</th>
+          <th>Peso</th>
+          <th>Descrição</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Frequência</td>
+          <td>Numérico</td>
+          <td>0.30</td>
+          <td>Visitas semanais à academia</td>
+        </tr>
+        <tr>
+          <td>Tipo de Plano</td>
+          <td>Categórico</td>
+          <td>0.15</td>
+          <td>Mensal, Trimestral, etc.</td>
+        </tr>
+        <tr>
+          <td>Dias em Atraso</td>
+          <td>Numérico</td>
+          <td>0.25</td>
+          <td>Dias desde o último pagamento</td>
+        </tr>
+        <tr>
+          <td>Estação do Ano</td>
+          <td>Categórico</td>
+          <td>0.10</td>
+          <td>Sazonalidade</td>
+        </tr>
+        <tr>
+          <td>Idade</td>
+          <td>Numérico</td>
+          <td>0.10</td>
+          <td>Fator demográfico</td>
+        </tr>
+        <tr>
+          <td>Tempo como Cliente</td>
+          <td>Numérico</td>
+          <td>0.10</td>
+          <td>Meses de assinatura</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Métricas de Performance:</strong></p>
+
+    <pre><code>{
+    "accuracy": 0.85, 
+    "precision": 0.82,
+    "recall": 0.78,
+    "f1_score": 0.80
+}</code></pre>
+
+    <footer
+      style="
+        margin-top: 4rem;
+        padding: 2rem 0;
+        text-align: center;
+        color: var(--gray);
+        border-top: 1px solid rgba(148, 163, 184, 0.2);
+        font-size: 0.9rem;
+      "
+    >
+      &copy; 2025 RetainFit Analytics — Todos os direitos reservados.<br />
+      Desenvolvido com 💙 por Avril.
+    </footer>
+  </body>
+</html>
