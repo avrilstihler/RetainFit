@@ -1,9 +1,10 @@
-![Banner](images/um.png)
-
 # RetainFit Analytics - Sistema de Predição de Evasão em Academias
+
 
 ![Status](https://img.shields.io/badge/Status-Desenvolvimento%20Ativo-brightgreen)
 ![Tecnologias](https://img.shields.io/badge/Tecnologias-HTML%2C%20CSS%2C%20JavaScript%2C%20Chart.js-blue)
+
+![Banner](images/um.png)
 
 ## 📌 Visão Geral
 
