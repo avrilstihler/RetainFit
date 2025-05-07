@@ -469,45 +469,7 @@
   scroll-margin-top: 1.5rem; /* Espaço para o cabeçalho fixo */
 }
 
-/* ==============================================
-   RESPONSIVIDADE
-   ============================================== */
-@media (max-width: 1024px) {
-  .document-container {
-    flex-direction: column;
-  }
-  
-  .document-sidebar {
-    position: static;
-    width: 100%;
-    flex: none;
-    max-height: none;
-    margin-bottom: 2rem;
-  }
-  
-  .document-navigation {
-    position: relative;
-    top: auto;
-  }
-}
 
-@media (max-width: 768px) {
-  body {
-    padding: 1.5rem;
-  }
-  
-  .document-navigation {
-    padding: 1rem;
-  }
-  
-  .document-header {
-    padding: 1.5rem;
-  }
-  
-  .document-title {
-    font-size: 1.8rem;
-  }
-}
 
 /* ==============================================
    COMPONENTES ADICIONAIS
