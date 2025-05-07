@@ -1,226 +1,553 @@
-:root {
-  --primary: #2563eb;
-  --primary-light: #3b82f6;
-  --secondary: #10b981;
-  --dark: #0f172a;
-  --darker: #020617;
-  --light: #f8fafc;
-  --gray: #94a3b8;
-  --code-bg: #1e293b;
+/* ==============================================
+   VARIÁVEIS DE CORES E ESTILOS
+   ============================================== */
+   :root {
+    /* Cores Principais */
+    --primary: #2563eb;
+    --primary-light: #3b82f6;
+    --primary-dark: #1d4ed8;
+    --secondary: #10b981;
+    --secondary-light: #34d399;
+    
+    /* Escala de Cinza */
+    --dark: #0f172a;
+    --darker: #020617;
+    --light: #f8fafc;
+    --lighter: #ffffff;
+    --gray: #94a3b8;
+    --gray-light: #cbd5e1;
+    --gray-dark: #64748b;
+    
+    /* Elementos Específicos */
+    --code-bg: #1e293b;
+    --highlight-bg: rgba(16, 185, 129, 0.1);
+    --border-color: rgba(148, 163, 184, 0.2);
+    
+    /* Espaçamentos */
+    --section-spacing: 2rem;
+    --paragraph-spacing: 1.2rem;
+  }
+  
+  /* ==============================================
+     RESET E ESTILOS BASE
+     ============================================== */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+    line-height: 1.7;
+    color: var(--dark);
+    background-color: var(--lighter);
+    min-height: 100vh;
+    padding: 3rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ==============================================
+     TIPOGRAFIA E TÍTULOS
+     ============================================== */
+  h1 {
+    color: var(--primary-dark);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 2rem 0 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--gray-light);
+    position: relative;
+  }
+  
+  h1::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 150px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: 2px;
+  }
+  
+  h2 {
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin: 2.5rem 0 1.2rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--gray-light);
+  }
+  
+  h3 {
+    color: var(--primary-dark);
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem;
+    font-weight: 600;
+  }
+  
+  h4 {
+    color: var(--dark);
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.8rem;
+    font-weight: 500;
+  }
+  
+  /* ==============================================
+     ELEMENTOS DE TEXTO
+     ============================================== */
+  p {
+    margin-bottom: var(--paragraph-spacing);
+    color: var(--dark);
+    line-height: 1.8;
+  }
+  
+  a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+  }
+  
+  /* ==============================================
+     LISTAS
+     ============================================== */
+  ul, ol {
+    margin: 1.5rem 0;
+    padding-left: 2.5rem;
+  }
+  
+  li {
+    margin-bottom: 0.8rem;
+    color: var(--dark);
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: disc;
+  }
+  
+  ol {
+    list-style-type: decimal;
+  }
+  
+  /* ==============================================
+     CÓDIGO E BLOCOS TÉCNICOS
+     ============================================== */
+  code {
+    font-family: "Fira Code", monospace;
+    background-color: var(--code-bg);
+    color: #f8fafc;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  
+  pre {
+    background-color: var(--code-bg);
+    padding: 1.2rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+    border-left: 4px solid var(--primary);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  pre code {
+    padding: 0;
+    background: transparent;
+    color: #e2e8f0;
+    font-size: 0.95rem;
+  }
+  
+  /* ==============================================
+     TABELAS
+     ============================================== */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--gray-light);
+  }
+  
+  th {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid var(--gray-light);
+    color: var(--dark);
+  }
+  
+  tr:last-child td {
+    border-bottom: none;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgba(241, 245, 249, 0.5);
+  }
+  
+  tr:hover td {
+    background-color: rgba(37, 99, 235, 0.05);
+  }
+  
+  /* ==============================================
+     DIAGRAMAS E ELEMENTOS VISUAIS
+     ============================================== */
+  .mermaid {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    border: 1px solid var(--gray-light);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .figure {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .figure img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .caption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--gray-dark);
+    text-align: center;
+  }
+  
+  /* ==============================================
+     DESTAQUES E ELEMENTOS ESPECIAIS
+     ============================================== */
+  strong {
+    color: var(--dark);
+    font-weight: 600;
+  }
+  
+  .highlight {
+    background-color: var(--highlight-bg);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    color: var(--secondary);
+    font-weight: 500;
+  }
+  
+  .note {
+    background-color: rgba(59, 130, 246, 0.1);
+    border-left: 4px solid var(--primary);
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .warning {
+    background-color: rgba(234, 179, 8, 0.1);
+    border-left: 4px solid #eab308;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  /* ==============================================
+     LAYOUT E SEÇÕES
+     ============================================== */
+  .section {
+    margin-bottom: var(--section-spacing);
+    padding-bottom: var(--section-spacing);
+    border-bottom: 1px solid var(--gray-light);
+  }
+  
+  .section:last-child {
+    border-bottom: none;
+  }
+  
+  /* ==============================================
+     RESPONSIVIDADE
+     ============================================== */
+  @media (max-width: 768px) {
+    body {
+      padding: 1.5rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    pre {
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* ==============================================
+     EFEITOS E ANIMAÇÕES
+     ============================================== */
+  @keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+  }
+  
+  .loading {
+    animation: pulse 1.5s infinite;
+  }
+  
+  /* ==============================================
+     COMPONENTES DE NAVEGAÇÃO (PARA DOCUMENTOS LONGOS)
+     ============================================== */
+  .toc {
+    background-color: rgba(241, 245, 249, 0.5);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid var(--gray-light);
+  }
+  
+  .toc-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+  }
+  
+  .toc-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .toc-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  .toc-item a {
+    color: var(--dark);
+    display: block;
+    padding: 0.3rem 0;
+  }
+  
+  .toc-item a:hover {
+    color: var(--primary);
+    text-decoration: none;
+    padding-left: 5px;
+    transition: all 0.2s;
+  }
+
+  /* ==============================================
+   LAYOUT COM SUMÁRIO LATERAL
+   ============================================== */
+.document-container {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
 }
 
-/* Reset e Estilos Base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Sumário lateral */
+.document-sidebar {
+  flex: 0 0 280px;
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  padding-right: 1rem;
 }
 
-body {
-  font-family: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
-  line-height: 1.7;
-  color: var(--light);
-  background-color: var(--darker);
-  background-image: radial-gradient(
-      circle at 10% 20%,
-      rgba(37, 99, 235, 0.1) 0%,
-      transparent 20%
-    ),
-    radial-gradient(
-      circle at 90% 80%,
-      rgba(16, 185, 129, 0.1) 0%,
-      transparent 20%
-    );
-  min-height: 100vh;
-  padding: 2rem 4rem;
+/* Conteúdo principal */
+.document-main {
+  flex: 1;
+  min-width: 0; /* Permite que o conteúdo principal encolha adequadamente */
 }
 
-/* Tipografia */
-h1 {
-  color: var(--primary-light);
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  position: relative;
-  padding-bottom: 0.5rem;
-}
-
-h1::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100px;
-  height: 4px;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
-  border-radius: 2px;
-}
-
-h2 {
-  color: var(--primary-light);
-  font-size: 1.8rem;
-  margin: 2.5rem 0 1.2rem;
-  padding-left: 1rem;
-  border-left: 4px solid var(--primary);
-}
-
-h3 {
-  color: var(--light);
-  font-size: 1.3rem;
-  margin: 1.8rem 0 1rem;
-}
-
-p {
-  margin-bottom: 1.2rem;
-  color: var(--gray);
-}
-
-/* Listas */
-ul,
-ol {
-  margin: 1.5rem 0;
-  padding-left: 2rem;
-}
-
-li {
-  margin-bottom: 0.8rem;
-  color: var(--gray);
-}
-
-/* Código e Blocos Técnicos */
-code {
-  font-family: "Fira Code", monospace;
-  background-color: var(--code-bg);
-  color: #f8fafc;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  font-size: 0.9em;
-}
-
-pre {
-  background-color: var(--code-bg);
-  padding: 1.2rem;
+/* Navegação do sumário */
+.document-navigation {
+  background-color: var(--lighter);
   border-radius: 8px;
-  margin: 1.5rem 0;
-  overflow-x: auto;
-  border-left: 4px solid var(--primary);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-pre code {
-  padding: 0;
-  background: transparent;
-  color: #e2e8f0;
-}
-
-/* Tabelas */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 2rem 0;
-  background-color: rgba(15, 23, 42, 0.7);
-  backdrop-filter: blur(10px);
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-th {
-  background-color: var(--primary);
-  color: white;
-  padding: 1rem;
-  text-align: left;
-  font-weight: 600;
-}
-
-td {
-  padding: 0.8rem 1rem;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
-  color: var(--gray);
-}
-
-tr:last-child td {
-  border-bottom: none;
-}
-
-tr:hover td {
-  background-color: rgba(37, 99, 235, 0.1);
-  color: var(--light);
-}
-
-/* Diagramas Mermaid */
-.mermaid {
-  background-color: rgba(15, 23, 42, 0.7);
   padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--gray-light);
+}
+
+.document-navigation h2 {
+  font-size: 1.3rem;
+  color: var(--primary-dark);
+  margin: 0 0 1.2rem 0;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid var(--primary-light);
+}
+
+.document-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.document-navigation li {
+  margin-bottom: 0.6rem;
+  position: relative;
+}
+
+.document-navigation a {
+  display: block;
+  padding: 0.5rem 0.8rem;
+  color: var(--dark);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.document-navigation a:hover {
+  background-color: var(--primary-ultralight);
+  color: var(--primary-dark);
+}
+
+.document-navigation a.active {
+  background-color: var(--primary-light);
+  color: white;
+  font-weight: 500;
+}
+
+/* Indicador hierárquico para subitens */
+.document-navigation .subitem {
+  padding-left: 1.5rem;
+}
+
+.document-navigation .subitem::before {
+  content: "→";
+  position: absolute;
+  left: 0.8rem;
+  color: var(--gray);
+  font-size: 0.8rem;
+}
+
+/* ==============================================
+   MELHORIAS NO LAYOUT PRINCIPAL
+   ============================================== */
+.document-header {
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 2rem;
   border-radius: 8px;
-  margin: 2rem 0;
-  border: 1px solid rgba(148, 163, 184, 0.1);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
 }
 
-/* Destaques e Elementos Especiais */
-strong {
-  color: var(--light);
-  font-weight: 600;
+.document-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
 }
 
-.highlight {
-  color: var(--secondary);
-  font-weight: 600;
+.document-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
 }
 
-/* Responsividade */
+/* Seções do conteúdo */
+.content-section {
+  margin-bottom: 3rem;
+  scroll-margin-top: 1.5rem; /* Espaço para o cabeçalho fixo */
+}
+
+/* ==============================================
+   RESPONSIVIDADE
+   ============================================== */
+@media (max-width: 1024px) {
+  .document-container {
+    flex-direction: column;
+  }
+  
+  .document-sidebar {
+    position: static;
+    width: 100%;
+    flex: none;
+    max-height: none;
+    margin-bottom: 2rem;
+  }
+  
+  .document-navigation {
+    position: relative;
+    top: auto;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     padding: 1.5rem;
   }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  pre {
+  
+  .document-navigation {
     padding: 1rem;
-    font-size: 0.9rem;
+  }
+  
+  .document-header {
+    padding: 1.5rem;
+  }
+  
+  .document-title {
+    font-size: 1.8rem;
   }
 }
 
-/* Efeitos Especiais */
-@keyframes pulse {
-  0% {
-    opacity: 0.6;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.6;
-  }
-}
-
-.loading {
-  animation: pulse 1.5s infinite;
-}
-
-/* Scrollbar Personalizada */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--darker);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--primary);
+/* ==============================================
+   COMPONENTES ADICIONAIS
+   ============================================== */
+/* Botão para mostrar/esconder sumário em mobile */
+.nav-toggle {
+  display: none;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
+  margin-bottom: 1rem;
+  cursor: pointer;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-light);
+@media (max-width: 1024px) {
+  .nav-toggle {
+    display: block;
+  }
+  
+  .document-navigation.collapsed {
+    display: none;
+  }
+}
+
+/* Barra de progresso de leitura */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--gray-light);
+  z-index: 1000;
+}
+
+.reading-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  width: 0%;
+  transition: width 0.2s ease;
 }
