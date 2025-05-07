@@ -302,6 +302,73 @@
       font-size: 0.9rem;
     }
   }
+
+  /* ==============================================
+   RESPONSIVIDADE
+   ============================================== */
+@media (max-width: 1024px) {
+  .document-container {
+      flex-direction: column;
+  }
+  
+  .document-sidebar {
+      position: static;
+      width: 100%;
+      flex: none;
+      max-height: none;
+      margin-bottom: 2rem;
+  }
+  
+  .document-navigation {
+      position: relative;
+      top: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+      padding: 1.5rem;
+  }
+  
+  .document-header {
+      padding: 2rem 1.5rem;
+  }
+  
+  .document-title {
+      font-size: 1.8rem;
+  }
+  
+  .document-subtitle {
+      font-size: 1rem;
+  }
+  
+  .document-main {
+      padding: 1.5rem;
+  }
+  
+  table {
+      display: block;
+      overflow-x: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      padding: 1rem;
+  }
+  
+  .document-header {
+      padding: 1.5rem 1rem;
+  }
+  
+  .document-title {
+      font-size: 1.5rem;
+  }
+  
+  .document-main {
+      padding: 1rem;
+  }
+}
   
   /* ==============================================
      EFEITOS E ANIMAÇÕES
@@ -362,6 +429,7 @@
   display: flex;
   gap: 2.5rem;
   align-items: flex-start;
+  margin-top: 2rem;
 }
 
 /* Sumário lateral */
@@ -377,7 +445,11 @@
 /* Conteúdo principal */
 .document-main {
   flex: 1;
-  min-width: 0; /* Permite que o conteúdo principal encolha adequadamente */
+  min-width: 0;
+  background-color: var(--lighter);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 /* Navegação do sumário */
@@ -440,76 +512,4 @@
   left: 0.8rem;
   color: var(--gray);
   font-size: 0.8rem;
-}
-
-/* ==============================================
-   MELHORIAS NO LAYOUT PRINCIPAL
-   ============================================== */
-.document-header {
-  background-color: var(--primary-dark);
-  color: white;
-  padding: 2rem;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-}
-
-.document-title {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.document-subtitle {
-  font-size: 1.1rem;
-  opacity: 0.9;
-}
-
-/* Seções do conteúdo */
-.content-section {
-  margin-bottom: 3rem;
-  scroll-margin-top: 1.5rem; /* Espaço para o cabeçalho fixo */
-}
-
-
-
-/* ==============================================
-   COMPONENTES ADICIONAIS
-   ============================================== */
-/* Botão para mostrar/esconder sumário em mobile */
-.nav-toggle {
-  display: none;
-  background-color: var(--primary);
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-  cursor: pointer;
-}
-
-@media (max-width: 1024px) {
-  .nav-toggle {
-    display: block;
-  }
-  
-  .document-navigation.collapsed {
-    display: none;
-  }
-}
-
-/* Barra de progresso de leitura */
-.reading-progress {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: var(--gray-light);
-  z-index: 1000;
-}
-
-.reading-progress-bar {
-  height: 100%;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
-  width: 0%;
-  transition: width 0.2s ease;
 }
