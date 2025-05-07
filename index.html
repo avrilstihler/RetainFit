@@ -19,6 +19,12 @@
   </head>
   <body>
     <header>
+      <div class="menu-toggle" id="menuToggle">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
       <div class="header-content">
         <div class="logo">
           <i class="fas fa-dumbbell"></i>
@@ -36,6 +42,36 @@
         </nav>
       </div>
     </header>
+
+    <nav class="sidebar" id="sidebar">
+      <div class="menu-categories">
+    
+        <div class="category">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="index.html" class="tab-link" data-tab="predict"></i> Página Inicial</a></li><ul>
+        <div class="category">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="index.html#predict" class="tab-link" data-tab="predict"><i</i> Previsão</a></li>
+            <li><a href="index.html#analysis" class="tab-link" data-tab="analysis"></i> Análise</a></li>
+            <li><a href="index.html#data" class="tab-link" data-tab="data"></i> Dados</a></li>
+            <li><a href="index.html#model" class="tab-link" data-tab="model"></i> Modelo</a></li>
+          </ul>
+        </div>
+    
+        <div class="category">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="tutorial.html"></i> Manual do Usuário</a></li>
+            <li><a href="suporte.html"></i> Suporte</a></li>
+          </ul>
+        </div>
+  
+    
+      </div>
+    </nav>
+    
 
     <div class="container">
       <!-- Tab Content -->
@@ -307,48 +343,6 @@
         </div>
 
         <div class="footer-section">
-          <h3>Links Rápidos</h3>
-          <ul class="footer-links">
-            <li>
-              <a href="index.html#predict" class="tab-link" data-tab="predict"
-                ><i class="fas fa-chevron-right"></i> Previsão</a
-              >
-            </li>
-            <li>
-              <a href="index.html#analysis" class="tab-link" data-tab="analysis"
-                ><i class="fas fa-chevron-right"></i> Análise</a
-              >
-            </li>
-            <li>
-              <a href="index.html#data" class="tab-link" data-tab="data"
-                ><i class="fas fa-chevron-right"></i> Dados</a
-              >
-            </li>
-            <li>
-              <a href="index.html#model" class="tab-link" data-tab="model"
-                ><i class="fas fa-chevron-right"></i> Modelo</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Recursos</h3>
-          <ul class="footer-links">
-            <li>
-              <a href="tutorial.html"
-                ><i class="fas fa-chevron-right"></i> Manual do Usuário</a
-              >
-            </li>
-            <li>
-              <a href="suporte.html"
-                ><i class="fas fa-chevron-right"></i> Suporte</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
           <h3>Contato</h3>
           <div class="footer-contact">
             <p><i class="fas fa-map-marker-alt"></i> Av. das Academias, 1234</p>
@@ -371,5 +365,6 @@
         </div>
       </div>
     </footer>
+    <script src="sidebar.js"></script>
   </body>
 </html>
