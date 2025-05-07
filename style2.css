@@ -513,3 +513,63 @@
   color: var(--gray);
   font-size: 0.8rem;
 }
+
+
+
+/* SUMÁRIO LATERAL EM TELAS PEQUENAS */
+@media (max-width: 768px) {
+  .document-container {
+    flex-direction: column;
+  }
+
+  .document-sidebar {
+    width: 100%;
+    position: relative;
+    top: 0;
+    max-height: none;
+    overflow: visible;
+    padding-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .document-navigation {
+    padding: 1rem;
+    box-shadow: none;
+    border: 1px solid var(--gray-light);
+  }
+
+  .document-navigation h2 {
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* CONTEÚDO AJUSTADO EM TELAS MUITO PEQUENAS */
+@media (max-width: 480px) {
+  .document-main {
+    padding: 1rem;
+  }
+
+  .toc {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* EVITA QUE PALAVRAS MUITO LONGAS QUEBREM O LAYOUT */
+body, p, li, td, th {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
