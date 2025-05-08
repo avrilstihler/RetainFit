@@ -99,7 +99,6 @@ Bem-vindo ao **RetainFit Analytics**, um sistema inteligente que ajuda academias
 ## 📝 Licença
 
 Este projeto está licenciado sob a **Apache License 2.0**.  
-Você pode usá-lo, modificá-lo e distribuí-lo, desde que siga os termos da licença.
 
 Para mais detalhes, consulte o arquivo [LICENSE](./LICENSE).
 
