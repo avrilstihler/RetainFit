@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manual - RetainFit Analytics</title>
+    <link rel="stylesheet" href="/css/style2.css" />
+  
+
+  </head>
+  <body>
+        <div class="menu-toggle" id="menuToggle">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </div>
+    <header class="document-header">
+      <h1 class="document-title">RetainFit Analytics - Manual do Usuário</h1>
+      <p class="document-subtitle">
+          <strong>Um guia completo para uso do sistema de previsão de evasão em academias: <em>RetainFit Analytics</em></strong>
+      </p>
+  </header>
+
+  <nav class="sidebar" id="sidebar">
+    <div class="menu-categories">
+  
+      <div class="category">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="/html/index.html" class="tab-link" data-tab="predict"></i> Página Inicial</a></li><ul>
+      <div class="category">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="index.html#predict" class="tab-link" data-tab="predict"><i</i> Previsão</a></li>
+          <li><a href="index.html#analysis" class="tab-link" data-tab="analysis"></i> Análise</a></li>
+          <li><a href="index.html#data" class="tab-link" data-tab="data"></i> Dados</a></li>
+          <li><a href="index.html#model" class="tab-link" data-tab="model"></i> Modelo</a></li>
+        </ul>
+      </div>
+  
+      <div class="category">
+        <h3>Recursos</h3>
+        <ul>
+          <li><a href="/html/manual.html"></i> Manual do Usuário</a></li>
+          <li><a href="/html/suporte.html"></i> Suporte</a></li>
+        </ul>
+    </div>
+  </nav>
+
+  <div class="content-container">
+    <aside class="summary">
+              <h2>Sumário</h2>
+              <ul>
+                  <li><a href="#introducao" class="active">1. Introdução</a></li>
+                  <li><a href="#uso-aplicacao">2. Como Usar a Aplicação</a></li>
+                  <li class="subitem"><a href="#abas-principais">2.1 Abas Principais</a></li>
+                  <li class="subitem"><a href="#passo-a-passo">2.2 Passo a Passo</a></li>
+                  <li><a href="#preparar-dados">3. Preparar Tabela de Dados</a></li>
+                  <li class="subitem"><a href="#formato-planilha">3.1 Formato da Planilha</a></li>
+                  <li class="subitem"><a href="#exemplo-planilha">3.2 Exemplo</a></li>
+                  <li><a href="#dicas">4. Dicas de Utilização</a></li>
+                  <li><a href="#suporte">5. Suporte</a></li>
+              </ul>
+          </nav>
+      </aside>
+
+      <!-- Conteúdo Principal -->
+      <article class="main-content">
+          <section id="introducao">
+              <h2>1. Introdução</h2>
+              <p>
+                  Este sistema foi desenvolvido para ajudar academias a prever a
+                  probabilidade de cancelamento de clientes com base em dados históricos e
+                  comportamentais.
+              </p>
+              <p>Com ele, você pode:</p>
+              <ul>
+                  <li><strong>Identificar clientes em risco</strong> de cancelamento</li>
+                  <li>
+                      <strong>Tomar ações preventivas</strong> com recomendações
+                      personalizadas
+                  </li>
+                  <li>
+                      <strong>Analisar padrões</strong> de cancelamento por plano,
+                      frequência e sazonalidade
+                  </li>
+              </ul>
+          </section>
+
+          <section id="uso-aplicacao">
+              <h2>2. Como Usar a Aplicação</h2>
+
+              <section id="abas-principais">
+                  <h3>2.1. Abas Principais</h3>
+                  <p>A aplicação possui 4 abas principais:</p>
+                  <ul>
+                      <li>
+                          <span class="emoji">📊</span> <strong>Previsão</strong> – Faça simulações individuais para
+                          avaliar o risco de cancelamento de um cliente específico.
+                      </li>
+                      <li>
+                          <span class="emoji">📈</span> <strong>Análise</strong> – Visualize gráficos e insights sobre
+                          cancelamentos por:
+                          <ul>
+                              <li>Estação do ano</li>
+                              <li>Tipo de plano</li>
+                              <li>Frequência semanal</li>
+                          </ul>
+                      </li>
+                      <li>
+                          <span class="emoji">📋</span> <strong>Dados</strong> – Visualize todos os clientes cadastrados e
+                          filtre por:
+                          <ul>
+                              <li>Todos os clientes</li>
+                              <li>Ativos</li>
+                              <li>Cancelados</li>
+                              <li>Alto risco</li>
+                          </ul>
+                      </li>
+                      <li>
+                          <span class="emoji">🤖</span> <strong>Modelo</strong> – Importe novos dados para treinar o modelo
+                          e veja métricas de desempenho (acurácia, precisão, recall)
+                      </li>
+                  </ul>
+              </section>
+
+              <section id="passo-a-passo">
+                  <h3>2.2. Passo a Passo para Uso</h3>
+
+                  <h4>Importando Dados</h4>
+                  <ol>
+                      <li>Vá para a aba <strong>"Modelo"</strong></li>
+                      <li>Clique em <strong>"Importar Dados"</strong></li>
+                      <li>Selecione o arquivo Excel (.xlsx ou .xls)</li>
+                      <li>Aguarde o processamento</li>
+                  </ol>
+                  
+                  <div class="highlight-box">
+                      ✅ <strong>Pronto!</strong> O sistema já está treinado com os dados e
+                      pronto para análises.
+                  </div>
+
+                  <h4>Fazendo Previsões Individuais</h4>
+                  <ol>
+                      <li>
+                          Preencha os campos:
+                          <ul>
+                              <li>Gênero</li>
+                              <li>Idade</li>
+                              <li>Meses como cliente</li>
+                              <li>Frequência semanal</li>
+                              <li>Tipo de plano</li>
+                              <li>Estação do ano</li>
+                              <li>Dias desde o último pagamento</li>
+                          </ul>
+                      </li>
+                      <li>Clique em <strong>"Calcular Risco"</strong></li>
+                  </ol>
+                  <p><span class="emoji">📌</span> <strong>O sistema mostrará:</strong></p>
+                  <ul>
+                      <li>% de risco de cancelamento</li>
+                      <li>Nível de risco (Baixo, Médio, Alto)</li>
+                      <li>Fatores de risco</li>
+                      <li>Sugestões de ação</li>
+                  </ul>
+
+                  <h4>Analisando Dados</h4>
+                  <p>Na aba <strong>"Análise"</strong>, você encontra:</p>
+                  <ul>
+                      <li>
+                          <span class="emoji">📊</span> <strong>Gráficos comparativos</strong> entre clientes ativos e
+                          cancelados
+                      </li>
+                      <li>
+                          <span class="emoji">🔍</span> <strong>Principais Insights</strong>, como:
+                          <ul>
+                              <li>Qual estação tem mais cancelamentos</li>
+                              <li>Quais planos têm maior retenção</li>
+                              <li>Como a frequência de uso afeta a evasão</li>
+                          </ul>
+                      </li>
+                  </ul>
+              </section>
+          </section>
+
+          <section id="preparar-dados">
+              <h2>3. Como Preparar a Tabela de Dados</h2>
+
+              <section id="formato-planilha">
+                  <h3>3.1. Formato da Planilha</h3>
+                  <p>
+                      A tabela deve ser em <strong>Excel (.xlsx ou .xls)</strong> e conter as
+                      seguintes colunas:
+                  </p>
+
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>Nome da Coluna</th>
+                              <th>Tipo de Dado</th>
+                              <th>Exemplo</th>
+                              <th>Obrigatório?</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td><strong>Gênero</strong></td>
+                              <td>Texto</td>
+                              <td>"Masculino", "Feminino"</td>
+                              <td>✅ Sim</td>
+                          </tr>
+                          <tr>
+                              <td><strong>Idade</strong></td>
+                              <td>Número</td>
+                              <td>25, 30, 40</td>
+                              <td>✅ Sim</td>
+                          </tr>
+                          <tr>
+                              <td><strong>Meses</strong></td>
+                              <td>Número</td>
+                              <td>3, 6, 12</td>
+                              <td>✅ Sim</td>
+                          </tr>
+                          <tr>
+                              <td><strong>Frequência</strong></td>
+                              <td>Número</td>
+                              <td>2 (vezes/semana)</td>
+                              <td>✅ Sim</td>
+                          </tr>
+                          <tr>
+                              <td><strong>Plano</strong></td>
+                              <td>Texto</td>
+                              <td>"Mensal", "Trimestral", "Anual"</td>
+                              <td>✅ Sim</td>
+                          </tr>
+                          <tr>
+                              <td><strong>Estação</strong></td>
+                              <td>Texto</td>
+                              <td>"Verão", "Inverno"</td>
+                              <td>✅ Sim</td>
+                          </tr>
+                          <tr>
+                              <td><strong>Último Pagamento</strong></td>
+                              <td>Data</td>
+                              <td>"15/03/2024"</td>
+                              <td>✅ Sim</td>
+                          </tr>
+                          <tr>
+                              <td><strong>Status</strong></td>
+                              <td>Texto</td>
+                              <td>"Ativo", "Cancelado"</td>
+                              <td>✅ Sim</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </section>
+
+              <section id="exemplo-planilha">
+                  <h3>3.2. Exemplo de Planilha Válida</h3>
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>Gênero</th>
+                              <th>Idade</th>
+                              <th>Meses</th>
+                              <th>Frequência</th>
+                              <th>Plano</th>
+                              <th>Estação</th>
+                              <th>Último Pagamento</th>
+                              <th>Status</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>Feminino</td>
+                              <td>28</td>
+                              <td>6</td>
+                              <td>3</td>
+                              <td>Mensal</td>
+                              <td>Verão</td>
+                              <td>10/03/2024</td>
+                              <td>Ativo</td>
+                          </tr>
+                          <tr>
+                              <td>Masculino</td>
+                              <td>35</td>
+                              <td>12</td>
+                              <td>1</td>
+                              <td>Anual</td>
+                              <td>Inverno</td>
+                              <td>15/01/2024</td>
+                              <td>Cancelado</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </section>
+          </section>
+
+          <section id="dicas">
+              <h2>4. Dicas para Melhor Utilização</h2>
+              <ul>
+                  <li>
+                      <span class="emoji">🔹</span> <strong>Atualize os dados regularmente</strong> para manter o
+                      modelo preciso.
+                  </li>
+                  <li>
+                      <span class="emoji">🔹</span> <strong>Use os filtros</strong> na aba "Dados" para encontrar
+                      clientes de alto risco.
+                  </li>
+                  <li>
+                      <span class="emoji">🔹</span> <strong>Acompanhe os insights</strong> na aba "Análise" para
+                      identificar padrões.
+                  </li>
+                  <li>
+                      <span class="emoji">🔹</span> <strong>Personalize as ações</strong> com base nas sugestões do
+                      sistema.
+                  </li>
+              </ul>
+          </section>
+
+          <section id="suporte">
+              <h2>5. Suporte</h2>
+              <p>Se tiver dúvidas ou problemas:</p>
+              <ul>
+                  <li><span class="emoji">📧</span> <strong>Contato:</strong> contato@retainfit.com</li>
+                  <li><span class="emoji">📞</span> <strong>Telefone:</strong> (11) 98765-4321</li>
+              </ul>
+
+              <div class="highlight-box">
+                  ✅ <strong>Pronto!</strong> Agora você pode usar o sistema para reduzir
+                  a evasão e melhorar a retenção de clientes! <span class="emoji">🚀</span>
+              </div>
+          </section>
+      </article>
+  </div>
+
+  <script>
+      // Ativação dos links do sumário conforme rolagem
+      document.addEventListener('DOMContentLoaded', function() {
+          const sections = document.querySelectorAll('section[id]');
+          const navLinks = document.querySelectorAll('.document-navigation a');
+          
+          window.addEventListener('scroll', function() {
+              let current = '';
+              
+              sections.forEach(section => {
+                  const sectionTop = section.offsetTop;
+                  const sectionHeight = section.clientHeight;
+                  
+                  if (window.scrollY >= sectionTop - 150) {
+                      current = section.getAttribute('id');
+                  }
+              });
+              
+              navLinks.forEach(link => {
+                  link.classList.remove('active');
+                  if (link.getAttribute('href') === '#' + current) {
+                      link.classList.add('active');
+                  }
+              });
+          });
+      });
+  </script>
+
+    <footer
+      style="
+        margin-top: 4rem;
+        padding: 2rem 0;
+        text-align: center;
+        color: var(--gray);
+        border-top: 1px solid rgba(148, 163, 184, 0.2);
+        font-size: 0.9rem;
+      "
+    >
+      &copy; 2025 RetainFit Analytics — Todos os direitos reservados.<br />
+      Desenvolvido com 💙 por Avril.
+    </footer>
+    <script src="/js/sidebar.js"></script>
+  </body>
+</html>
