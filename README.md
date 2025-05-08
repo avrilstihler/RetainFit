@@ -31,13 +31,15 @@
 
 ## 🛠️ Tecnologias Utilizadas
 
-| Tecnologia        | Descrição                    |
-|-------------------|------------------------------|
-| HTML5             | Estrutura do sistema         |
-| CSS3              | Estilização e layout         |
-| JavaScript ES6+   | Lógica e interações          |
-| Chart.js          | Visualização de dados        |
-| SheetJS (xlsx)    | Leitura de arquivos Excel    |
+<p align="left">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/SheetJS-xlsx-007ACC?style=for-the-badge&logo=microsoft-excel&logoColor=white" />
+</p>
+
+
 
 ## 🚀 Como Usar
 
@@ -92,6 +94,6 @@ Para mais detalhes, consulte o arquivo [LICENSE](./LICENSE).
 <div align="center">
 
 &copy; 2025 RetainFit Analytics — Todos os direitos reservados.  
-Desenvolvido com 💙 por Avril.
+Desenvolvido por Avril Stihler.
 
 </div>
