@@ -1,4 +1,5 @@
-# RetainFit Analytics - Sistema de Predição de Evasão em Academias
+# 💪 RetainFit Analytics
+**Sistema de Predição de Evasão em Academias**
 
 ## 📌 Visão Geral
 
@@ -7,6 +8,13 @@
 - **Sugestões personalizadas** para retenção de clientes
 - **Painel administrativo** completo
 
+## ✨ Funcionalidades Principais
+
+| Módulo               | Descrição                                                                      | Detalhes                                                                 |
+|----------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| **🔮 Módulo de Predição** | Realiza cálculos preditivos de cancelamento                                   | - 📌 Probabilidade em tempo real<br>- 📌 7 fatores de risco analisados<br>- 📌 Classificação em 3 níveis (🟥 Alto, 🟨 Médio, 🟩 Baixo) |
+| **📊 Módulo de Análise**  | Gera visualizações e insights estratégicos                                    | - 📈 Gráficos interativos:<br>  • Tipo de plano<br>  • Estação do ano<br>  • Frequência semanal<br>- 💡 Insights automáticos |
+| **📋 Módulo de Dados**    | Gerencia e filtra informações dos clientes                                    | - 🔍 Filtros dinâmicos:<br>  • Todos clientes<br>  • Ativos<br>  • Cancelados<br>  • Alto risco<br>- 📤 Importação de Excel |
 ## ✨ Funcionalidades Principais
 
 ### 🔮 Módulo de Predição
