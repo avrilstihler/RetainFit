@@ -1,41 +1,40 @@
-# 💪 RetainFit Analytics
-**Sistema de Predição de Evasão em Academias**
+# RetainFit Analytics
+ <img src="https://img.shields.io/badge/Sistema_de_Predição_de_Evasão_em_Academias-007BFF?style=for-the-badge&logo=fitness&logoColor=white" />
 
-## 📌 Visão Geral
+Bem-vindo ao **RetainFit Analytics**, um sistema inteligente que ajuda academias a prever e reduzir a evasão de alunos.
+
+## 📋 Visão Geral
 
 - **Modelo preditivo** baseado em dados históricos
 - **Análise visual** de fatores de risco
 - **Sugestões personalizadas** para retenção de clientes
 - **Painel administrativo** completo
 
-## ✨ Funcionalidades Principais
+## 📌 Funcionalidades Principais
 
-| Módulo               | Descrição                                                                      | Detalhes                                                                 |
-|----------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| **🔮 Módulo de Predição** | Realiza cálculos preditivos de cancelamento                                   | - 📌 Probabilidade em tempo real<br>- 📌 7 fatores de risco analisados<br>- 📌 Classificação em 3 níveis (🟥 Alto, 🟨 Médio, 🟩 Baixo) |
-| **📊 Módulo de Análise**  | Gera visualizações e insights estratégicos                                    | - 📈 Gráficos interativos:<br>  • Tipo de plano<br>  • Estação do ano<br>  • Frequência semanal<br>- 💡 Insights automáticos |
-| **📋 Módulo de Dados**    | Gerencia e filtra informações dos clientes                                    | - 🔍 Filtros dinâmicos:<br>  • Todos clientes<br>  • Ativos<br>  • Cancelados<br>  • Alto risco<br>- 📤 Importação de Excel |
-## ✨ Funcionalidades Principais
-
-### 🔮 Módulo de Predição
+### 🔮 Previsão
 - Calcula probabilidade de cancelamento em tempo real
 - Considera 7 fatores de risco principais
 - Classifica o risco em 3 níveis (Alto, Médio, Baixo)
 
-### 📊 Módulo de Análise
+### 📈 Análise
 - Gráficos interativos por:
-  - Tipo de plano
   - Estação do ano
+  - Tipo de plano
   - Frequência semanal
-- Principais insights automáticos
+- Insights automáticos.
 
-### 📋 Módulo de Dados
-- Tabela dinâmica com filtros:
+### 📋 Dados
+- Filtros dinâmicos:
   - Todos clientes
-  - Ativos
-  - Cancelados
-  - Alto risco
-- Importação de planilhas Excel
+  -  Ativos
+  -  Cancelados
+  -   Alto risco
+- Visualização completa dos registros.
+
+### 🤖 Modelo
+- Importação de dados Excel (.xlsx ou .xls).
+- Treinamento automático do modelo.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -48,28 +47,36 @@
 </p>
 
 
-
-## 🚀 Como Usar
+## 🧭 Como Usar
 
 ### Pré-requisitos
 - Navegador moderno (Chrome, Firefox, Edge)
 - Arquivo Excel no formato especificado (opcional)
 
-### Instruções
-1. **Previsão Individual**:
-   - Preencha o formulário na aba "Previsão"
-   - Obtenha o risco calculado e ações recomendadas
+### 1. Importar Dados
+- Vá até a aba **"Modelo"**
+- Clique em **"Importar Dados"**
+- Selecione o arquivo Excel (.xlsx ou .xls)
+- Aguarde o processamento automático
 
-2. **Análise Geral**:
-   - Navegue pelas abas de análise
-   - Visualize gráficos por diferentes categorias
+### 2. Fazer Previsões Individuais
+- Preencha os campos: Gênero, Idade, Meses, Frequência, Plano, Estação, Último Pagamento
+- Clique em **"Calcular Risco"**
+- O sistema exibirá:
+  - Percentual e nível de risco
+  - Fatores que influenciam o risco
+  - Sugestões práticas
 
-3. **Importar Dados**:
-   - Na aba "Modelo", arraste um arquivo Excel
-   - Sistema treinará com os novos dados
+### 3. Explorar Análises
+- Acesse a aba **"Análise"**
+- Visualize gráficos comparando clientes ativos e cancelados
+- Veja os principais padrões de evasão
 
-4. **Visualização**:
-   - Use filtros na aba "Dados" para diferentes visualizações
+### 4. Vizualizar Dados
+- Acesse a aba **"Dados"**
+- Consulte a visão geral dos clientes com base na tabela importada
+
+
 
 ## 📈 Modelo Preditivo
 
