@@ -710,6 +710,8 @@ footer {
 /* ============================================== */
 
 .sidebar {
+  font-family: "Roboto", "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  line-height: 1.6;
   position: fixed;
   top: 0;
   left: -320px;
@@ -763,17 +765,17 @@ footer {
 
 .category li {
   padding: 0.75rem 0;
-  border-bottom: 1px solid var(--dark);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   transition: background-color 0.2s ease, padding 0.2s ease;
 }
 
 .category li:hover {
-  background-color: var(--dark);
+  background-color:rgba(255, 255, 255, 0.05);
   padding-left: 0.5rem;
 }
 
 .category a {
-  color: var(--gray-dark);
+  color: var(--light);
   text-decoration: none;
   display: block;
   transition: color 0.2s ease;
