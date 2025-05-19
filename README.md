@@ -55,7 +55,7 @@ Bem-vindo ao **RetainFit Analytics**, um sistema inteligente que ajuda academias
 
 > Quer testar as funcionalidades do sistema com uma tabela pré-pronta?
 > 
-> 💡 Baixe o arquivo por aqui: [Tabela Excel](.main/Tabela%20para%20Testes/dados_alunos_academia.xls)
+> 💡 Baixe o arquivo por aqui: [Tabela Excel](.main/Tabela%20para%20Testes/dados_clientes_academia.xlsx)
 
 ### 1. Importar Dados
 - Vá até a aba **"Modelo"**
