@@ -53,6 +53,10 @@ Bem-vindo ao **RetainFit Analytics**, um sistema inteligente que ajuda academias
 - Navegador moderno (Chrome, Firefox, Edge)
 - Arquivo Excel no formato especificado (opcional)
 
+> Quer testar as funcionalidades do sistema com uma tabela pré-pronta?
+> 
+> 💡 Baixe o arquivo por aqui: [Tabela Excel](.main/Tabela%20para%20Testes/dados_alunos_academia.xls)
+
 ### 1. Importar Dados
 - Vá até a aba **"Modelo"**
 - Clique em **"Importar Dados"**
