@@ -3,6 +3,8 @@
 
 Bem-vindo ao **RetainFit Analytics**, um sistema inteligente que ajuda academias a prever e reduzir a evasão de alunos.
 
+![RetainFit - Demonstração](./show.gif)
+
 ## 📋 Visão Geral
 
 - **Modelo preditivo** baseado em dados históricos
