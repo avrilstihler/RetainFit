@@ -16,7 +16,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-  
   </head>
   <body>
     <header>
@@ -24,7 +23,7 @@
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
-    </div>
+      </div>
 
       <div class="header-content">
         <div class="logo">
@@ -45,21 +44,44 @@
 
     <nav class="sidebar" id="sidebar">
       <div class="menu-categories">
-
         <div class="category">
           <h3>Menu</h3>
           <ul>
-            <li><a href="index.html" class="tab-link" data-tab="predict"> Página Inicial</a></li>
+            <li>
+              <a href="index.html" class="tab-link" data-tab="predict">
+                Página Inicial</a
+              >
+            </li>
           </ul>
         </div>
 
         <div class="category">
           <h3>Links Rápidos</h3>
           <ul>
-            <li><a href="index.html#predict" class="tab-link" data-tab="predict"> Previsão</a></li>
-            <li><a href="index.html#analysis" class="tab-link" data-tab="analysis"> Análise</a></li>
-            <li><a href="index.html#data" class="tab-link" data-tab="data"> Dados</a></li>
-            <li><a href="index.html#model" class="tab-link" data-tab="model"> Modelo</a></li>
+            <li>
+              <a href="index.html#predict" class="tab-link" data-tab="predict">
+                Previsão</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#analysis"
+                class="tab-link"
+                data-tab="analysis"
+              >
+                Análise</a
+              >
+            </li>
+            <li>
+              <a href="index.html#data" class="tab-link" data-tab="data">
+                Dados</a
+              >
+            </li>
+            <li>
+              <a href="index.html#model" class="tab-link" data-tab="model">
+                Modelo</a
+              >
+            </li>
           </ul>
         </div>
 
@@ -68,11 +90,10 @@
           <ul>
             <li><a href="manual.html"> Manual do Usuário</a></li>
             <li><a href="suporte.html"> Suporte</a></li>
-           </ul>
+          </ul>
         </div>
       </div>
     </nav>
-    
 
     <div class="container">
       <!-- Tab Content -->
@@ -293,15 +314,23 @@
 
             <div>
               <h3><i class="fas fa-info-circle"></i> Sobre o Modelo</h3>
-              <p>
-                Este protótipo <strong>simula</strong> como um modelo de Random Forest poderia prever a chance de cancelamento com base em:
+              <p class="document-description">
+                Este é um protótipo que <strong>simula</strong> o uso de Inteligência Artificial.
+                Não há, no momento, um modelo de IA real implementado.<br />
               </p>
+              
+              <p>A previsão é simulada com base em um <strong>conjunto de regras e heurísticas</strong> que considera os seguintes fatores:</p>
               <ul style="margin-top: 0.5rem; padding-left: 1.5rem">
                 <li>Dados demográficos (gênero, idade)</li>
                 <li>Histórico de uso (meses como cliente, frequência)</li>
                 <li>Detalhes do plano (tipo, dias desde último pagamento)</li>
                 <li>Fatores sazonais (estação do ano)</li>
               </ul>
+              <br />
+              <p>
+                O "treinamento" do modelo com seus dados é atualmente uma <strong>simulação</strong>.
+              </p>
+
 
               <div
                 style="
@@ -311,11 +340,14 @@
                   border-radius: var(--border-radius);
                 "
               >
-                <h4><i class="fas fa-chart-line"></i> Performance do Modelo</h4>
+                <h4>
+                  <i class="fas fa-chart-line"></i> Performance do Modelo
+                  (simulação)
+                </h4>
                 <p id="modelAccuracy">Acurácia: Carregando...</p>
                 <p id="modelPrecision">Precisão: Carregando...</p>
                 <p id="modelRecall">Recall: Carregando...</p>
-                <p id="modelDate">Último treinamento: -</p>
+                <p id="modelDate">Último treinamento (simulação): -</p>
               </div>
             </div>
           </div>
@@ -343,7 +375,7 @@
         </div>
 
         <div class="footer-section">
-          <h3>Contato <span style="color: #6c757d;">(fictício)</span></h3>
+          <h3>Contato <span style="color: #6c757d">(fictício)</span></h3>
           <div class="footer-contact">
             <p><i class="fas fa-map-marker-alt"></i> Av. das Academias, 1234</p>
             <p><i class="fas fa-phone"></i> (11) 98765-4321</p>
