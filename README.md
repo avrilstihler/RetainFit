@@ -116,23 +116,26 @@ A simulação de risco neste protótipo considera os seguintes fatores principai
 
 ## 🤝 Equipe Desenvolvedora (Talento Tech-PR: Cerro Azul)
 
-*   Avril de Castro Stihler ([LinkedIn](URL_DO_LINKEDIN_AVRIL))
-*   Rayanne Cordeiro ([LinkedIn](URL_DO_LINKEDIN_RAYANNE))
-*   Kaline dos Anjos Marche ([LinkedIn](URL_DO_LINKEDIN_KALINE))
-*   Poliana Aparecida de Paula ([LinkedIn](URL_DO_LINKEDIN_POLIANA))
+Idealização e Desenvolvimento Full-Stack:
+*   Avril de Castro Stihler ([LinkedIn](https://www.linkedin.com/in/avrilstihler))
+
+Apresentação do Pitch:
+*   Rayanne Cordeiro ([LinkedIn](https://www.linkedin.com/in/rayanne-cordeiro-48b141336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app))
+*   Kaline dos Anjos Marche ([LinkedIn](https://www.linkedin.com/in/kaline-marche-6a7b2435b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app))
+*   Poliana Aparecida de Paula ([LinkedIn](https://www.linkedin.com/in/poliana-paula-88455a337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app))
 
 ## 📝 Licença
 
 Este projeto está licenciado sob a [Creative Commons Atribuição-NãoComercial 4.0 Internacional (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
 O uso comercial do código, ideia ou estrutura do sistema é **proibido** sem autorização prévia das autoras.
 
-Para mais detalhes, consulte o arquivo `LICENSE` neste repositório.
+Para mais detalhes, consulte o arquivo [LICENSE](LICENSE) neste repositório.
 
 ---
 
 <div align="center">
 
-© 2024 RetainFit Analytics — Protótipo para fins educacionais e de demonstração.  
-Desenvolvido por Avril Stihler (Idealização e Desenvolvimento) com a equipe Talento Tech-PR Cerro Azul: Rayanne Cordeiro, Kaline Marche, Poliana de Paula (Apresentação).
+© 2025 RetainFit Analytics — Protótipo para fins educacionais e de demonstração.  
+Desenvolvido pela equipe Talento Tech - Cerro Azul: Avril Stihler, Rayanne Cordeiro, Kaline Marche, Poliana de Paula.
 
 </div>
