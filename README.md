@@ -74,7 +74,7 @@ Agradecemos o interesse no projeto e qualquer feedback sobre o protótipo atual!
 
 ### Pré-requisitos
 -   Navegador moderno (Chrome, Firefox, Edge, Safari).
--   (Opcional) Um arquivo Excel (.xlsx, .xls) ou CSV (.csv) com dados de alunos para testar a funcionalidade de importação. Um exemplo de formato pode ser encontrado no [Manual do Usuário](LINK_PARA_O_MANUAL_SE_TIVER).
+-   (Opcional) Um arquivo Excel (.xlsx, .xls) ou CSV (.csv) com dados de alunos para testar a funcionalidade de importação. Um exemplo de formato pode ser encontrado na aba "Manual do Usuário" presente no site.
 
 ### 1. Importar Dados (para simular o treinamento)
 -   Navegue até a aba **"Modelo"**.
