@@ -7,6 +7,17 @@ Bem-vindo ao **RetainFit Analytics**, um protótipo funcional de um sistema inte
 
 ![RetainFit - Demonstração](./show.gif)
 
+## 🔗 Links Importantes
+
+* 🎥 Pitch da solução: [YouTube – RetainFit](https://www.youtube.com/watch?v=PSHwUXA98ZM)
+* 🌐 Protótipo online: [RetainFit – Site do projeto](https://avrilstihler.github.io/RetainFit/)
+
+**Observação:**
+No pitch, apresentamos a **ideia como uma aplicação real de IA**, com foco na proposta de valor e no impacto.
+No entanto, o protótipo atual é uma **simulação**: ainda não há modelo de IA implementado. Maiores explicações abaixo.
+
+----
+
 ## ⚠️ Aviso Importante sobre este Protótipo
 
 Este projeto foi desenvolvido como parte de um desafio acadêmico (Talento Tech-PR) com o objetivo de explorar e demonstrar como a Inteligência Artificial poderia ser aplicada para solucionar o problema de retenção de clientes em academias.
@@ -16,6 +27,7 @@ Este projeto foi desenvolvido como parte de um desafio acadêmico (Talento Tech-
 As previsões, análises de risco e o "treinamento do modelo" ao importar dados são gerados por um conjunto de regras e heurísticas pré-definidas. Estas simulações foram desenhadas para espelhar a lógica e os resultados que um modelo de IA real, como o Random Forest, proporcionaria.
 
 Este repositório e a aplicação hospedada têm fins educacionais, de demonstração do conceito e validação da interface e da proposta de valor.
+
 
 ## 🎯 Visão Geral do Projeto
 
