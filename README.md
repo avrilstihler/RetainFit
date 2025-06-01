@@ -5,9 +5,19 @@ Bem-vindo ao **RetainFit Analytics**, um sistema inteligente que ajuda academias
 
 ![RetainFit - Demonstração](./show.gif)
 
+## ⚠️ Aviso de Transparência
+Este projeto foi desenvolvido como parte de um desafio acadêmico, com o objetivo de propor uma solução baseada em Inteligência Artificial para academias.
+
+## ➡️ Importante:
+O sistema atual é um protótipo funcional que simula o comportamento de um modelo preditivo de IA, mas não possui um modelo de IA real implementado até o momento.
+
+A proposta demonstra como a IA poderia ser aplicada para gerar previsões e auxiliar na tomada de decisões dentro do contexto de academias. O desenvolvimento do modelo de IA real está previsto para etapas futuras.
+
+Este repositório tem fins educacionais, de demonstração e validação da ideia.
+
 ## 📋 Visão Geral
 
-- **Modelo preditivo** baseado em dados históricos
+- **Modelo preditivo** baseado em dados históricos (simulação)
 - **Análise visual** de fatores de risco
 - **Sugestões personalizadas** para retenção de clientes
 - **Painel administrativo** completo
@@ -36,7 +46,7 @@ Bem-vindo ao **RetainFit Analytics**, um sistema inteligente que ajuda academias
 
 ### 🤖 Modelo
 - Importação de dados Excel (.xlsx ou .xls).
-- Treinamento automático do modelo.
+- Treinamento automático do modelo (simulação).
 
 ## 🛠️ Tecnologias Utilizadas
 
