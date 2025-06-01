@@ -114,7 +114,7 @@ A simulação de risco neste protótipo considera os seguintes fatores principai
 | Semestral     | 180+ dias                   |
 | Anual         | 365+ dias                   |
 
-## 🤝 Equipe Desenvolvedora (Talento Tech-PR)
+## 🤝 Equipe Desenvolvedora (Talento Tech-PR: Cerro Azul)
 
 *   Avril de Castro Stihler ([LinkedIn](URL_DO_LINKEDIN_AVRIL))
 *   Rayanne Cordeiro ([LinkedIn](URL_DO_LINKEDIN_RAYANNE))
@@ -133,6 +133,6 @@ Para mais detalhes, consulte o arquivo `LICENSE` neste repositório.
 <div align="center">
 
 © 2024 RetainFit Analytics — Protótipo para fins educacionais e de demonstração.  
-Desenvolvido pela equipe Talento Tech-PR: Avril Stihler, Rayanne Cordeiro, Kaline Marche, Poliana de Paula.
+Desenvolvido por Avril Stihler (Idealização e Desenvolvimento) com a equipe Talento Tech-PR Cerro Azul: Rayanne Cordeiro, Kaline Marche, Poliana de Paula (Apresentação).
 
 </div>
