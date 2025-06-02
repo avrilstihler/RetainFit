@@ -101,7 +101,7 @@ Agradecemos o interesse no projeto e qualquer feedback sobre o protótipo atual!
 
 ### 3. Explorar Análises de Dados
 -   Vá para a aba **"Análise"**.
--   Selecione diferentes visualizações (Por Estação, Por Plano, Por Frequência) para ver gráficos gerados a partir dos dados carregados (ou dos dados fictícios iniciais).
+-   Selecione diferentes visualizações (Por Estação, Por Plano, Por Frequência) para ver gráficos gerados a partir dos dados carregados.
 
 ### 4. Visualizar a Base de Dados
 -   Acesse a aba **"Dados"**.
